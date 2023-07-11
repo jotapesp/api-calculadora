@@ -18,11 +18,12 @@ Essa é uma API que faz as operações matemáticas básicas (adição, subtraç
 
 (PT-BR)
 <p>Para rodar o programa, abra o terminal e use o comando</p>
+
 `uvicorn api_app:app --reload` .
 
 #### Obtendo resultado das operações
 
-<p>Após rodar o comando inicial, a URL a ser utilizada nos _requests_ será `http://127.0.0.1:8000` . A API aceita apenas _requests_ no método _POST_ e os valores devem ser passados em uma variável json, por exemplo:</p>
+<div>Após rodar o comando inicial, a URL a ser utilizada nos _requests_ será</div>`http://127.0.0.1:8000`<div>. A API aceita apenas _requests_ no método _POST_ e os valores devem ser passados em uma variável json, por exemplo:</div>
 
  - `resp = post("http://127.0.0.1:8000", json={"valor1": int, "valor2": int, "operacao": "nome_operacao"})`
 
