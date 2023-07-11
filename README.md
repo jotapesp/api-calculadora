@@ -12,25 +12,30 @@ Essa é uma API que faz as operações matemáticas básicas (adição, subtraç
 
 - `pip install -r requirements.txt`
 
-O arquivo requirements.txt vem no repositório e vai instalar todas as dependências da aplicação.
+<p>O arquivo requirements.txt vem no repositório e vai instalar todas as dependências da aplicação.</p>
 
 ### Como usar
 
 (PT-BR)
-Para rodar o programa, abra o terminal e use o comando
+<p>Para rodar o programa, abra o terminal e use o comando</p>
 `uvicorn api_app:app --reload` .
 
 #### Obtendo resultado das operações
 
-Após rodar o comando inicial, a URL a ser utilizada nos _requests_ será `http://127.0.0.1:8000` . A API aceita apenas _requests_ no método _POST_ e os valores devem ser passados em uma variável json, por exemplo:
-- `resp = post("http://127.0.0.1:8000", json={"valor1": int, "valor2": int, "operacao": "nome_operacao"})`
-As operações aceitas são:
-- Adição (substituia nome_operação por `adicao`, `adição`, `soma` ou `+`)
-- Subtração (substituia nome_operação por `subtracao`, `subtração` ou `-`)
-- Multiplicação (substituia nome_operação por `multiplicacao`, `multiplicação` ou `*`)
-- Divisão (substituia nome_operação por `divisao`, `divisão` ou `/`)
-As operações serão sempre realizadas respeitando a ordem `valor1` e `valor2`, ou seja, adição: `valor1 + valor2`, ou divisão: `valor1 / valor2`.
-O resultado pode ser carregado em uma variável utilizando a função `loads` da biblioteca `json`, e vem no formato
+<p>Após rodar o comando inicial, a URL a ser utilizada nos _requests_ será `http://127.0.0.1:8000` . A API aceita apenas _requests_ no método _POST_ e os valores devem ser passados em uma variável json, por exemplo:</p>
+
+ - `resp = post("http://127.0.0.1:8000", json={"valor1": int, "valor2": int, "operacao": "nome_operacao"})`
+
+<p>As operações aceitas são:</p>
+
+ - Adição (substituia nome_operação por `adicao`, `adição`, `soma` ou `+`)
+ - Subtração (substituia nome_operação por `subtracao`, `subtração` ou `-`)
+ - Multiplicação (substituia nome_operação por `multiplicacao`, `multiplicação` ou `*`)
+ - Divisão (substituia nome_operação por `divisao`, `divisão` ou `/`)
+
+<p>As operações serão sempre realizadas respeitando a ordem `valor1` e `valor2`, ou seja, adição: `valor1 + valor2`, ou divisão: `valor1 / valor2`.
+O resultado pode ser carregado em uma variável utilizando a função `loads` da biblioteca `json`, e vem no formato</p>
+
 ```python
 {
  "valor1": valor1 int,
@@ -42,5 +47,5 @@ O resultado pode ser carregado em uma variável utilizando a função `loads` da
 
 ### Documentação
 
-- [`doc.html`](https://github.com/jotapesp) ou
+- [`documentation.html`](https://github.com/jotapesp/api-calculadora/blob/main/requirements.txt) ou
 - `http://127.0.0.1:8000/docs`
