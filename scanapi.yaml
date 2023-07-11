@@ -1,0 +1,10 @@
+endpoints:
+  - name: API_Calc # The API's name of your API
+    path: http://127.0.0.1:8000/ # The API's base url
+    requests:
+      - name: calc # The name of the first request
+        path: / # The path of the first request
+        method: post # The HTTP method of the first request
+        tests:
+          - name: status_code_is_200 # The name of the first test for this request
+            assert:  ${{ response.status_code == 200 }}  # The assertion
