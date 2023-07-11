@@ -48,5 +48,5 @@ O resultado pode ser carregado em uma variável utilizando a função `loads` da
 
 ### Documentação
 
-- [`documentation.html`](https://github.com/jotapesp/api-calculadora/blob/main/requirements.txt) ou
+- [`documentation.html`](https://github.com/jotapesp/api-calculadora/blob/main/documentation.html) ou
 - `http://127.0.0.1:8000/docs`
